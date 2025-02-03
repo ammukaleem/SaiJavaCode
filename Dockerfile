@@ -1,7 +1,7 @@
 # Pull base image 
-From tomcat:8-jre8 
+From tomcat:9.0.8-jre8 
 
 # Maintainer 
-MAINTAINER "sai4cs@gmail.com" 
-COPY ./webapp.war /usr/local/tomcat/webapps
-RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
+MAINTAINER "Mohammad Kaleem" 
+COPY ./webapp.war usr/local/tomcat/webapps
+
