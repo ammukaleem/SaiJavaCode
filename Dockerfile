@@ -3,8 +3,6 @@ From tomcat:9.0.8-jre8
 
 # Maintainer 
 MAINTAINER "Mohammad Kaleem" 
-RUN  docker stop tomcontainer && docker rm tomcontainer && docker rmi dockaleem/tomcat-app:latest
-RUN /home/vagrant/SaiJavaCode
 RUN docker build -t dockaleem/tomcat-app:latest .
 RUN docker run -itd --name tomcontainer -p 8080:9000 dockaleem/tomcat-app:latest
 
