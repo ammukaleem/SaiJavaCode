@@ -4,5 +4,5 @@ From tomcat:9.0.8-jre8
 # Maintainer 
 LABEL MAINTAINER "Mohammad Kaleem" 
 COPY ./webapp.war usr/local/tomcat/webapps
-EXPOSE 8080
+EXPOSE 9000
 
