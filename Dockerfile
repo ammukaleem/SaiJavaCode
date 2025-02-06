@@ -5,6 +5,6 @@ FROM tomcat:9.0.8-jre8
 LABEL MAINTAINER "Mohammad Kaleem" 
 COPY webapp.war /opt/tomcat/webapps/ROOT.war
 EXPOSE 9000
-CMD rm -rf /opt/tomcat/webapps/ROOT.war && catalina.sh run
+#CMD rm -rf /opt/tomcat/webapps/ROOT.war && catalina.sh run
 
 
