@@ -3,9 +3,9 @@ FROM tomcat:9.0.8-jre8
 
 # Maintainer 
 LABEL MAINTAINER "Mohammad Kaleem" 
-COPY webapp.war /opt/tomcat/webapps/
+COPY webapp.war /usr/local/tomcat/webapps/
 EXPOSE 9000
-CMD rm -rf /opt/tomcat/webapps/*.war 
+CMD rm -rf /usr/local/tomcat/webapps/*.war 
 CMD ["catalina.sh", "run"]
 
 
