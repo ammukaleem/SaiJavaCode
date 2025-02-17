@@ -27,7 +27,7 @@ jobs:
         run: |
           TAG=${{ secrets.DOCKER_USERNAME }}/$IMAGE:${{ TAG }}
           docker pull $IMAGE:$TAG
-          echo "Docker image pulled with tag $latest"
+          echo "Docker image pulled with tag $TAG"
 
       - name: login-GitHub:
         needs: Login to GitHub
